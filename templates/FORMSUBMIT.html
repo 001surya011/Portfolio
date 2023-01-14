@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM_SUBMIT</title>
+  </head>
+  <body>
+    <form   method="post"> <!--  action="action.php" -->
+      First Name :
+      <input type="text" placeholder="First Name" id="firstname" /><br />
+      Last Name : <input type="text" placeholder="Last Name" id="lastname" />
+      <br />
+      Email : <input type="email" required /><br />
+      Birthday : <input type="date" required /><br />
+      Password :
+      <input type="password" name="password" minlength="12" required /> <br />
+
+      <!-- Radio Buttons -->
+      <br />
+      Gender : <br />
+      <input type="radio" name="gender" value = "Male"/>Male <br />
+      <input type="radio" name="gender" value = "Female"/>Female <br />
+      <input type="radio" name="gender" value = "Other"/>Other <br />
+ CARS : <br>
+ <select name="car" id="car">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+ </select><br>
+      <!-- #CheckBox -->
+      PETS: <br />
+      <input type="checkbox" />Dogs <br />
+      <input type="checkbox" />Cats
+      <br />
+      <input type="submit" value="Register" />
+      <input type="Reset" value="Reset" />
+      <!-- # Resets HTML FORMS -->
+    </form>
+  </body>
+</html>
