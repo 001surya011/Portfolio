@@ -46,7 +46,7 @@ def write_to_csv(data): # csv --> Comma Separated Values
         subject = data["subject"]
         message = data["message"]
         # csv_writer.writeheader()
-        csv_writer = csv.writer(database2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(database2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         csv_writer.writerow([email,subject,message]) # List Format Is Important
 
 
